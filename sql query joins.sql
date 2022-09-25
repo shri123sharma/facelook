@@ -1,0 +1,9 @@
+-- select customer.first_name,customer.last_name,customer.email from customer right outer join rental on customer.customer_id=rental.customer_id;
+-- select rental.rental_id,rental.return_date from rental left outer join customer on rental.customer_id = customer.customer_id;
+--  select customer.* from customer full outer join rental on customer.customer_id=rental.customer_id;
+-- select * from customer;
+-- select address.* from address full outer join city on address.city_id=city.city_id where address2 isnull;
+-- select city.city from city right outer join address on address.city_id = city.city_id;
+-- select customer.* from customer inner join payment USING(customer_id) where customer.customer_id=2 or customer.first_name='patricia';
+-- select customer.customer_id,customer.first_name,customer.last_name,staff.first_name,staff.last_name,payment.payment_date,payment.amount
+-- from customer INNER join payment using(customer_id) inner join staff  using(staff_id) order by payment_date; 
